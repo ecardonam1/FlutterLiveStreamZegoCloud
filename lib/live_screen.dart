@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_live_streaming_app/utils.dart';
 import 'dart:math';
+
 
 import 'package:zego_uikit_prebuilt_live_streaming/zego_uikit_prebuilt_live_streaming.dart';
 
@@ -17,17 +19,14 @@ class LiveScreenView extends StatelessWidget {
     required this.userID
   });
 
-  // Add your app id here and app sign in
-  // Make sure you replace with your own
-  final int appID = int.parse('ZEGO_APP_ID');
-  final String appSign = 'ZEGO_APP_ID';
+
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: ZegoUIKitPrebuiltLiveStreaming(
-        appID: appID,
-        appSign: appSign,
+        appID: Utils.appId,
+        appSign: Utils.appSignin,
         userID: userID,
         userName: 'user_$userID',
         liveID: liveID,

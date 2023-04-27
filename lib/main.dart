@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_live_streaming_app/audio_calling_screen.dart';
 import 'package:flutter_live_streaming_app/group_calling_screen.dart';
+import 'package:flutter_live_streaming_app/home_screen.dart';
 import 'package:flutter_live_streaming_app/video_calling.dart';
 
 void main() async {
   runApp(const MyApp());
+
 }
 
 class MyApp extends StatelessWidget {
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Zego Video Calling',
-      home:  GroupCallScreen(),
+      home:  HomeScreen(),
     );
   }
 }

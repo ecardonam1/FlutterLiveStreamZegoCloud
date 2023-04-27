@@ -3,6 +3,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_live_streaming_app/group_calling_screen.dart';
 import 'package:flutter_live_streaming_app/live_screen.dart';
 
 
@@ -72,7 +73,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   MaterialPageRoute(
                     builder: (context) => LiveScreenView(
                       liveID: liveIDController.text,
-                      isHost: true, userID: '',
+                      isHost: true, userID: userID,
                     ),
                   ),
                 );
@@ -91,8 +92,20 @@ class _HomeScreenState extends State<HomeScreen> {
                       builder: (context) => LiveScreenView(
                         liveID: liveIDController.text,
                         isHost: false,
-                        userID: '',
+                        userID: userID,
                       ),
+                    ),
+                  );
+                }
+            ),
+            ElevatedButton(
+                style: buttonStyle,
+                child: const Text('Group calling'),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => GroupCallScreen()
                     ),
                   );
                 }

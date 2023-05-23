@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "919276237909",
+    "project_id": "stream-umg",
+    "storage_bucket": "stream-umg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919276237909:android:e48af0559d49e3f7ee50dc",
+        "android_client_info": {
+          "package_name": "com.example.flutter_live_streaming_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919276237909-kunhu58sqnha8o4136qfmta7s5e15r89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnCohmkUXIPCp4bDpwz39eAMR_HlLFryo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919276237909-kunhu58sqnha8o4136qfmta7s5e15r89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
